@@ -1,0 +1,27 @@
+/* ! Mobile ! */
+.wrapper{
+    text-align: center;
+    margin: 1rem;
+}
+
+#portrait {
+    width: -webkit-fill-available;
+    width: 70%;
+}
+
+h4{
+    font-weight: bolder;
+}
+
+.points h6{
+    text-decoration: underline;
+    font-weight: bolder;
+}
+
+/* Skills */
+
+.skill{
+    display: flex;
+    justify-content:center;
+    flex-wrap: wrap;
+}
