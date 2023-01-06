@@ -1,9 +1,10 @@
 /* ! Mobile ! */
+
 .wrapper{
     text-align: center;
     margin: 1rem;
 }
-
+/* Acceuil */
 #portrait {
     width: -webkit-fill-available;
     width: 70%;
@@ -13,15 +14,27 @@ h4{
     font-weight: bolder;
 }
 
-.points h6{
-    text-decoration: underline;
-    font-weight: bolder;
-}
-
-/* Skills */
-
 .skill{
     display: flex;
     justify-content:center;
     flex-wrap: wrap;
+}
+
+/* Portfolio */
+
+.card-portfolio{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.card {
+    margin: 1rem;
+}
+
+/* Blog */
+
+.card-blog{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;   
 }
