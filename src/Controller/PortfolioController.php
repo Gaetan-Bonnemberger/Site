@@ -17,4 +17,14 @@ class PortfolioController extends AbstractController
             'controller_name' => 'PortfolioController',
         ]);
     }
+
+    /**
+     * @Route("/portfolio/CityCo", name="portfolio-CityCo")
+     */
+    public function cityCo(): Response
+    {
+        return $this->render('portfolio/cityCo.html.twig', [
+            'controller_name' => 'PortfolioController',
+        ]);
+    }
 }

@@ -1,6 +1,6 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello ContactController!{% endblock %}
+{% block title %}Gaetan Bonnemberger - contact{% endblock %}
 
 {% block body %}
 <style>
@@ -8,13 +8,17 @@
     .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
 </style>
 
-<div class="example-wrapper">
-    <h1>Hello {{ controller_name }}! ✅</h1>
+<div class="contact">
 
-    This friendly message is coming from:
-    <ul>
-        <li>Your controller at <code><a href="{{ '/var/www/html/Perso/Site/src/Controller/ContactController.php'|file_link(0) }}">src/Controller/ContactController.php</a></code></li>
-        <li>Your template at <code><a href="{{ '/var/www/html/Perso/Site/templates/contact/index.html.twig'|file_link(0) }}">templates/contact/index.html.twig</a></code></li>
-    </ul>
+<h1>Formulaire de contact<h1>
+
+    <p>N'hesitez pas à me contacter pour d'éventuels projets professionnels</p>
+
+    {{ form_start(our_form) }}
+        {{ form_widget(our_form) }}
+        {# <button type="submit">Envoyer</button> #}
+    {{ form_end(our_form) }}
+
+
 </div>
 {% endblock %}
