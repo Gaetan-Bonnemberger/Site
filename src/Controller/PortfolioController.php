@@ -27,4 +27,24 @@ class PortfolioController extends AbstractController
             'controller_name' => 'PortfolioController',
         ]);
     }
+
+    /**
+     * @Route("/portfolio/trip", name="portfolio-Trip")
+     */
+    public function trip(): Response
+    {
+        return $this->render('portfolio/trip.html.twig', [
+            'controller_name' => 'PortfolioController',
+        ]);
+    }
+
+    /**
+     * @Route("/portfolio/blog", name="portfolio-Blog")
+     */
+    public function blog(): Response
+    {
+        return $this->render('portfolio/blog.html.twig', [
+            'controller_name' => 'PortfolioController',
+        ]);
+    }
 }

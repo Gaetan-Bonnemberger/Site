@@ -16,7 +16,7 @@
     <div class="card-portfolio">
     
     <div class="card" style="">
-        <img id="City-co" src="{{ asset('assets/images/Home-CityCo.png') }}" class="card-img-top" alt="...">
+        <img id="City-co" src="{{ asset('assets/images/Home-CityCo.png') }}" class="card-img-top" alt="CityCo">
         <div class="card-body">
             <h5 class="card-title">City-Connect</h5>
             <p class="card-text">Un site dédié à la communication entre une équipe municipale et les administrés via un systeme de doléance géolocalisé.</p>
@@ -24,45 +24,21 @@
         </div>
     </div>
     <div class="card" style="">
-        <img src="..." class="card-img-top" alt="...">
+        <img src="{{ asset('assets/images/Trip1.png') }}" class="card-img-top" alt="trip project">
         <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+            <h5 class="card-title">TripOdvisor</h5>
+            <p class="card-text">Un site de voyage que j'ai codé lors de ma formation pour le titre pro DWWM</p>
+            <a href="{{ path('portfolio-Trip') }}" class="btn btn-primary">Jeter un oeil</a>
         </div>
     </div>
     <div class="card" style="">
-        <img src="..." class="card-img-top" alt="...">
+        <img src="{{ asset('assets/images/Blog.png') }}" class="card-img-top" alt="...">
         <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+            <h5 class="card-title">Blog</h5>
+            <p class="card-text">Mes premieres armes avec Symfony basé sur un blog des articles pouvant etre trié par tag</p>
+            <a href="{{ path('portfolio-Blog') }}" class="btn btn-primary">Jeter un oeil</a>
         </div>
-    </div>
-    <div class="card" style="width: 18rem;">
-        <img src="..." class="card-img-top" alt="...">
-        <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
-    </div>
-    <div class="card" style="width: 18rem;">
-        <img src="..." class="card-img-top" alt="...">
-        <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
-    </div>
-    <div class="card" style="width: 18rem;">
-        <img src="..." class="card-img-top" alt="...">
-        <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
-    </div>    
+    </div> 
     </div>
 </div>
 {% endblock %}

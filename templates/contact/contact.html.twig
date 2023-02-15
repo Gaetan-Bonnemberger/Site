@@ -8,17 +8,15 @@
     .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
 </style>
 
-<div class="contact">
+<div class="wrapper">
 
-<h1>Formulaire de contact<h1>
+    <h1>Formulaire de contact</h1>
+    <p>N'hesitez pas à me contacter pour vos projets professionnels</p>
 
-    <p>N'hesitez pas à me contacter pour d'éventuels projets professionnels</p>
-
-    {{ form_start(our_form) }}
+    <div class="contact">
+        {{ form_start(our_form) }}
         {{ form_widget(our_form) }}
-        {# <button type="submit">Envoyer</button> #}
-    {{ form_end(our_form) }}
-
-
+        {{ form_end(our_form) }}
+    </div>
 </div>
 {% endblock %}
