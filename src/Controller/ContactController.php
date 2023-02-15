@@ -16,6 +16,7 @@ class ContactController extends AbstractController
      */
     public function index(Request $request, MailerInterface $mailer)
     {
+Rajout-BoutonContact
         $form = $this->createForm(ContactType::class);
         $form->handleRequest($request);
 
@@ -38,6 +39,10 @@ class ContactController extends AbstractController
 
         return $this->render('contact/contact.html.twig', [
             'our_form' => $form->createView(),
+
+        return $this->render('contact/contact.html.twig', [
+            'controller_name' => 'ContactController',
+ main
         ]);
     }
 }

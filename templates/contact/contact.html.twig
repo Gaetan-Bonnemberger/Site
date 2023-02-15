@@ -1,6 +1,8 @@
 {% extends 'base.html.twig' %}
 
+
 {% block title %}Gaetan Bonnemberger - contact{% endblock %}
+
 
 {% block body %}
 <style>
@@ -9,6 +11,7 @@
 </style>
 
 <div class="wrapper">
+
 
     <h1>Formulaire de contact</h1>
     <p>N'hesitez pas à me contacter pour vos projets professionnels</p>
@@ -19,5 +22,17 @@
         {{ form_end(our_form) }}
     </div>
     <a href="{{ path('portfolio') }}" class="btn btn-primary w=50% mb-3">Retour à l'acceuil</a>
+
+    <h1>Contactez moi</h1>
+    <p>Vous pouvez me contacter ici :</p>
+    <div class="link">
+
+        <a href="mailto:Bonnemberger.gaetan@gmail.com"><i class="bi bi-envelope-fill"></i></a>
+        <a href="https://github.com/Gaetan-Bonnemberger"><i class="bi bi-github"></i></a>
+        <a href="https://twitter.com/GBonnemberger"><i class="bi bi-twitter"></i></a>
+        <a href="https://www.linkedin.com/in/gaetan-bonnemberger/"><i class="bi bi-linkedin"></i></a>
+
+    </div>
+
 </div>
 {% endblock %}
