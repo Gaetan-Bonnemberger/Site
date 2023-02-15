@@ -1,6 +1,8 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello ContactController!{% endblock %}
+
+{% block title %}Gaetan Bonnemberger - contact{% endblock %}
+
 
 {% block body %}
 <style>
@@ -9,6 +11,18 @@
 </style>
 
 <div class="wrapper">
+
+
+    <h1>Formulaire de contact</h1>
+    <p>N'hesitez pas à me contacter pour vos projets professionnels</p>
+
+    <div class="contact">
+        {{ form_start(our_form) }}
+        {{ form_widget(our_form) }}
+        {{ form_end(our_form) }}
+    </div>
+    <a href="{{ path('portfolio') }}" class="btn btn-primary w=50% mb-3">Retour à l'acceuil</a>
+
     <h1>Contactez moi</h1>
     <p>Vous pouvez me contacter ici :</p>
     <div class="link">
@@ -19,5 +33,6 @@
         <a href="https://www.linkedin.com/in/gaetan-bonnemberger/"><i class="bi bi-linkedin"></i></a>
 
     </div>
+
 </div>
 {% endblock %}
